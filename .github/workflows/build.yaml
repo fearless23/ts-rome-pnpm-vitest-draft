@@ -1,0 +1,28 @@
+name: Lint > Format > Build
+on:
+  push:
+    branches: [master]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'pnpm'
+      - name: Install Dependencies
+        run: pnpm install
+      - name: Lint, Format
+        run: pnpm run check
+      - name: Run tests
+        run: pnpm test
+      - name: Build
+        run: pnpm run build

@@ -1,0 +1,27 @@
+{
+	"files": {
+		"ignore": [
+			".github", ".husky", ".vscode", "coverage", "dev_docs", "docs", "node_modules", "build",
+			"scripts"
+		]
+	},
+	"formatter": {
+		"lineWidth": 100
+	},
+	"linter": {
+		"rules": {
+			"correctness": {
+				"noUnusedVariables": "error",
+				"noUndeclaredVariables": "error"
+			},
+			"suspicious": {
+				"noExplicitAny": "error",
+				"noArrayIndexKey": "error"
+			},
+			"nursery": {
+				"noRestrictedGlobals": "error",
+				"useExhaustiveDependencies": "error"
+			}
+		}
+	}
+}

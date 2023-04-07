@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "target": "ES2022",
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "build",
+    "module": "Node16",
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "composite": true,
+    "incremental": true,
+    "noEmit": false,
+    "removeComments": true,
+    "noUncheckedIndexedAccess": true,
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
