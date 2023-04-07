@@ -1,18 +1,15 @@
 {
   "compilerOptions": {
     "lib": [
-      "ES2022",
-      "DOM"
+      "ES2022"
     ],
     "target": "ES2022",
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "build",
     "module": "Node16",
-    "declaration": true,
     "strict": true,
     "esModuleInterop": true,
-    "composite": true,
     "incremental": true,
     "noEmit": false,
     "removeComments": true,

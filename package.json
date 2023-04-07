@@ -10,15 +10,14 @@
     "fix": "pnpm format && pnpm lint",
     "check": "rome ci .",
     "typecheck": "tsc --noEmit",
-    "build": "tsc --build",
-    "build:force": "tsc --build --force",
+    "build": "tsc",
     "test": "vitest run --no-threads",
-    "test:faster": "vitest run --no-threads",
     "test:coverage": "vitest run --no-threads --coverage",
     "test:ui": "vitest --ui",
     "doc": "typedoc",
     "dev": "ts-node-esm dev/index.ts"
   },
+  "type": "module",
   "keywords": [],
   "author_details": {
     "email": "jaspreetsing2379@gmail.com",
